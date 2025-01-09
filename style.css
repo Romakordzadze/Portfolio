@@ -24,6 +24,9 @@ header{
     align-items: center;
     gap: 10px;
 }
+h3{
+    color: white;
+}
 .fb{
     display: flex;
     gap: 20px;
@@ -34,8 +37,8 @@ header{
 }
 .fb a{
     text-decoration: none;
-    color: rgb(208, 255, 0);
-    font-size: 18px;
+    color: rgb(153, 15, 160);
+    font-size: 20px;
 }
 h1{
     font-size: 80px;
