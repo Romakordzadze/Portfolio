@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">Roma</div>
+        <ul class="menu">
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#aboutme">About Me</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#myskills">Skills</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <section class="home" id="home">
+        <div class="home-img" data-aos="zoom-in" data-aos-duration="3000">
+            <img src="./Лучшие казино Selectio.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Hi, It's <span>Roma</span></h1>
+            <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700" class="typing-text">I'm a <span></span></h3>
+            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">I build complete web applications and platforms, 
+                from reliable backend architectures to intuitive and engaging UI/UX designs. 
+                My goal is to create efficient, scalable, and user-friendly digital solutions. 
+                Always eager to learn new technologies and develop innovative solutions that make an impact.</p>
+            <div class="social-icons">
+                <a data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200" href="https://github.com/Romakordzadze" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300" href="https://www.linkedin.com/in/roma-kordzadze-0a25b21ab/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400" href="https://www.instagram.com/r_kordzadze/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" href="https://www.facebook.com/roma.kordzadze.1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <button data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700" class="btn">Download CV</button>
+        </div>
+    </section>
+    <section class="aboutme" id="aboutme">
+        <div data-aos="fade-up" data-aos-duration="1500" class="title">
+            <span>About Me</span>
+            <div class="xazi"></div>
+        </div>
+        <div class="aboutmetxt">
+            <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                <img src="./Лучшие казино Selectio.jpg" alt="">
+            </div>
+            <div class="right" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                <p>I’m a graduate of IT Step Academy with experience in both frontend and backend 
+                    development. I’ve worked with technologies like HTML, CSS, JavaScript, React, 
+                    Angular, and Tailwind on the frontend, and C# for backend development.
+                     I also have experience with SQL databases and have completed several projects
+                      that have helped me sharpen my skills. I’m passionate about self-learning, always 
+                      eager to explore new technologies, and excited to take on challenges that help me 
+                      grow in the tech industry.</p>
+            </div>
+        </div>
+    </section>
+    <section class="myskills" id="myskills">
+        <div data-aos="fade-up" data-aos-duration="1500" class="title">
+            <span>Skills</span>
+            <div class="xazi"></div>
+        </div>
+        <div class="container">
+            <div class="skills" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
+                <p class="father">Frontend Development <i class="fa-solid fa-arrow-down"></i></p>
+                <p class="child">HTML, CSS, JavaScript, React, <br> Angular, Tailwind CSS, Node.JS</p>
+            </div>
+            <div class="skills" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                <p class="father">Backend Development <i class="fa-solid fa-arrow-down"></i></p>
+                <p class="child">C#, ASP.NET</p>
+            </div>
+            <div class="skills"data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                <p class="father">Databases <i class="fa-solid fa-arrow-down"></i></p>
+                <p class="child">SQL, MySQL</p>
+            </div>
+            <div class="skills" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                <p class="father">Other Tools <i class="fa-solid fa-arrow-down"></i></p>
+                <p class="child">Git, Visual Studio, VS Code, Figma</p>
+            </div>
+            <div class="skills" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
+                <p class="father">Soft Skills <i class="fa-solid fa-arrow-down"></i></p>
+                <p class="child">Problem-solving, teamwork, <br> adaptability, communication</p>
+            </div>
+            <div class="skills" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
+                <p class="father">Languages <i class="fa-solid fa-arrow-down"></i></p>
+                <p class="child">English(B2) <br>
+                                 Georgian(Native)
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects"> 
+        <div data-aos="fade-up" data-aos-duration="1500" class="title">
+            <span>Projects</span>
+            <div class="xazi"></div>
+        </div>
+        <div class="projectscont">
+            <div class="prjs" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
+                <a target="_blank" href="https://onlinerestaurant-seven.vercel.app/">
+                <img src="./Angular vs Vue_ What to Pick_.jpg" alt="">
+                <p>Restaurant-Angular</p>
+            </a>
+            </div>
+            <div class="prjs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <a target="_blank" href="https://java-script-restaurant.vercel.app/">
+                <img src="./Learn JavaScript_ The Complete Guide Code Tutorials _ Envato Tuts+.jpg" alt="">
+                <p>Restaurant-JavaScript</p>
+            </a>
+            </div>
+            <div class="prjs" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+                <a target="_blank" href="https://skilled-elearning-landing-page-tan.vercel.app/">
+                <img src="./React_js for Beginners — Props and State Explained.jpg" alt="">
+                <p>Skilled-ellearning-React-Tailwind</p>
+            </a>
+            </div>
+            <div class="prjs" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                <a target="_blank" href="https://tic-tac-toe-game-psi-ebon.vercel.app/">
+                <img src="./How to Write a Tic-Tac-Toe Program in Java.jpg" alt="">
+                <p>Tic-Tac-Toe Game</p>
+            </a>
+            </div>
+            <div class="prjs" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
+                <a target="_blank" href="https://memory-game-azure-phi.vercel.app/">
+                <img src="./hand-drawn-memory-game-card_23-2150138543.avif" alt="">
+                <p>Memory-Game</p>
+            </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>

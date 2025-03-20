@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    padding-top: 80px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: #000000;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
+}
+.menu {
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.menu li a:hover {
+    color: #e63946;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 13px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: #111;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .menu li:hover{
+        background-color: white;
+        border-radius: 10px;
+        color: white;
+    }.menu li a:hover{
+        color: white;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #b74b4b;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #b74b4b;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #b74b4b;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0  0 25px #b74b4b;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #b74b4b;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Full-Stack Developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Web Developer";
+    }
+}
+
+
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 11rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    }
+    .aboutme {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+    
+  
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .title span {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    .xazi {
+        width: 80px;
+        height: 3px;
+        background-color: rgb(203, 34, 212);
+        margin-top: 8px;
+        transition: width 0.5s ease-in-out;
+    }
+    
+  
+    .aboutmetxt {
+        width: 90%;
+        max-width: 900px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    
+   
+    .left img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    
+   
+    .right {
+        flex: 1;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    
+    @media screen and (max-width: 768px) {
+        .aboutmetxt {
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+        }
+    
+        .left img {
+            max-width: 200px;
+        }
+    
+        .right {
+            font-size: 14px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 480px) {
+        .title span {
+            font-size: 24px;
+        }
+    
+        .xazi {
+            width: 60px;
+        }
+    
+        .aboutmetxt {
+            width: 100%;
+            padding: 0 15px;
+        }
+    
+        .right {
+            font-size: 13px;
+        }
+    }
+    
+    .myskills {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+    
+
+    .myskills .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .myskills .title span {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    
+    .xazi {
+        width: 80px;
+        height: 3px;
+        background-color: rgb(203, 34, 212);
+        margin-top: 8px;
+        transition: width 0.5s ease-in-out;
+    }
+    
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        max-width: 900px;
+        width: 90%;
+    }
+    
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        height: 130px;
+        background-color: #746060;
+        border-radius: 40px;
+        border: none;
+        text-align: center;
+    }
+    
+    .father {
+        font-size: 20px;
+        font-weight: bolder;
+        color: rgb(67, 34, 13);
+    }
+    
+    .father i {
+        color: aqua;
+    }
+    
+    .child {
+        font-size: 16px;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+  
+    @media screen and (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr; 
+            gap: 30px;
+        }
+    
+        .skills {
+            max-width: 90%;
+            height: auto;
+            padding: 15px;
+        }
+    
+        .father {
+            font-size: 18px;
+        }
+    
+        .child {
+            font-size: 14px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 480px) {
+        .myskills .title span {
+            font-size: 28px;
+        }
+    
+        .xazi {
+            width: 60px;
+        }
+    
+        .skills {
+            max-width: 100%;
+            padding: 12px;
+        }
+    
+        .father {
+            font-size: 16px;
+        }
+    
+        .child {
+            font-size: 13px;
+        }
+    }
+    
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 50px 20px;
+    }
+    
+    .projects .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .projects .title span {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    
+    .xazi {
+        width: 80px;
+        height: 3px;
+        background-color: rgb(203, 34, 212);
+        margin-top: 8px;
+        transition: width 0.5s ease-in-out;
+    }
+    
+
+    .projectscont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        max-width: 1100px;
+        width: 90%;
+    }
+    
+  
+    .prjs a {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        padding: 15px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .prjs img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .prjs p {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .prjs:hover {
+        box-shadow: 0 0 30px #b74b4b;
+        transform: translateY(-5px);
+    }
+    
+    .prjs:hover p {
+        color: #e63946;
+    }
+    
+   
+    @media screen and (max-width: 1024px) {
+        .projectscont {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+    
+        .prjs img {
+            height: 220px;
+        }
+    
+        .prjs p {
+            font-size: 18px;
+        }
+    }
+    
+   
+    @media screen and (max-width: 600px) {
+        .projects .title span {
+            font-size: 30px;
+        }
+    
+        .xazi {
+            width: 60px;
+        }
+    
+        .projectscont {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    
+        .prjs {
+            padding: 10px;
+        }
+    
+        .prjs img {
+            height: 200px;
+        }
+    
+        .prjs p {
+            font-size: 16px;
+        }
+    }
+    
+.menu li a.active {
+    color: red;
+    font-weight: bold;
+}
+.menu li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e63946;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu li a.active::after {
+    width: 100%;
+}
